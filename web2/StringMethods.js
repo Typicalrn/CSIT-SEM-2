@@ -1,0 +1,16 @@
+let string="Hello World";
+console.log("Length of string= "+ string.length);
+console.log("Character at index 3 = " + string.charAt(3));
+console.log("Character at index 3 = " + string.at(3));
+console.log("Character Code at index 3 = "+ string.charCodeAt(3));
+console.log("characters between index 0 and 5 = "+ string.slice(0,5));
+console.log("Characters after index 5= " + string.slice(5));
+console.log("String in uppercase = " + string.toUpperCase());
+console.log("String to lowercase = " + string.toLowerCase());
+console.log("Hello World concatinated with ! = " + string.concat("!"));
+console.log("String with trim = " + string.trim());
+console.log("String with trim start = " + string.trimStart());
+console.log("String with trim End = "+ string.trimEnd());
+console.log("Reapeated twice string = "  + string.repeat(2));
+console.log("Replacing World with this is Alex from Microsoft! = " +string. replace("World"," this is Alex from Microsoft!"));
+console.log("Splited the sting on space = " + string.split(" "));
