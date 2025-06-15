@@ -1,32 +1,31 @@
 #include <iostream>
-
+using namespace std;
 class Fraction{
 
     private:
-        float numerator;
-        float denominator;
+        float num,deno;
 
     public:
         void getData(){
-            std::cout << "Enter numerator: ";
-            std::cin >> numerator;
+            cout << "Enter Numerator: ";
+            cin >> num;
 
-            std::cout << "Enter denominator: ";
-            std::cin >> denominator;
+            cout << "Enter Denominator: ";
+            cin >> deno;
         }
 
         Fraction operator /(Fraction f2){
             Fraction temp;
 
-            temp.numerator = this->numerator * f2.denominator;
-            temp.denominator = f2.numerator * this->denominator; 
+            temp.num = this->num * f2.deno;
+            temp.deno = f2.num * this->deno; 
 
             return temp;
         }
 
         void showData(){
-            std::cout << "Numerator: " << numerator << std::endl;
-            std::cout << "Denominator: " << denominator << std::endl;
+            cout << "Numerator: " << num << endl;
+            cout << "Denominator: " << deno << endl;
         }
 
 };

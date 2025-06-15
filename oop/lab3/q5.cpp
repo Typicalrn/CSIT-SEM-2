@@ -1,26 +1,26 @@
 #include <iostream>
-
+using namespace std;
 class Student{
 
     private:
         int roll;
-        std::string name;
+        string name;
 
     public:
         void getData(){
         
-            std::cout << "Enter student name: ";
-            std::getline(std::cin >> std::ws, name);
+            cout << "Enter student name: ";
+            getline(cin >> ws, name);
 
-            std::cout << "Enter student roll no. : ";
-            std::cin >> roll; 
+            cout << "Enter student roll no. : ";
+            cin >> roll; 
 
         }
 
         int operator <<(Student s1){
         
-            std::cout << "Name: " << s1.name << std::endl;
-            std::cout << "Roll: " << s1.roll << std::endl;
+            cout << "Name: " << s1.name << endl;
+            cout << "Roll: " << s1.roll << endl;
 
         }
 
@@ -32,7 +32,7 @@ int main(){
 
     s1.getData();
 
-    std::cout << "Student Info:" << std::endl;
+    cout << "Student Info:" << endl;
     s1<<s1;
 
 }

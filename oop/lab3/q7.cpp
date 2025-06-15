@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 class Complex{
 
     private:
@@ -10,11 +10,11 @@ class Complex{
     public: 
         
         void getData(){
-            std::cout << "Enter imaginary part: ";
-            std::cin >> img;
+            cout << "Enter imaginary part: ";
+            cin >> img;
 
-            std::cout << "Enter real part: ";
-            std::cin >> real;
+            cout << "Enter real part: ";
+            cin >> real;
         }
 
 
@@ -30,8 +30,8 @@ class Complex{
 
         void showData(){
         
-            std::cout << "Real: " << real << std::endl;
-            std::cout << "Imaginary: " << img << std::endl;
+            cout << "Real: " << real << endl;
+            cout << "Imaginary: " << img << endl;
 
         }
 };

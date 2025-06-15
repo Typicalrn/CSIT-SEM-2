@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 class Time{
 
     private:
@@ -10,11 +10,11 @@ class Time{
 
         void getTime(){
 
-            std::cout << "Enter Hours: ";
-            std::cin >> hours;
+            cout << "Enter Hours: ";
+            cin >> hours;
 
-            std::cout << "Enter Minutes: ";
-            std::cin >> minutes;
+            cout << "Enter Minutes: ";
+            cin >> minutes;
 
         }
 
@@ -39,8 +39,8 @@ class Time{
 
         void showTime(){
             
-            std::cout << "Total Hours: " << hours << std::endl;
-            std::cout << "Total Minutes: " << minutes << std::endl;
+            cout << "Total Hours: " << hours << endl;
+            cout << "Total Minutes: " << minutes << endl;
 
         }
 

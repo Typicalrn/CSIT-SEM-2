@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 class Point{
 
     private:
@@ -9,11 +9,11 @@ class Point{
     public:
         void getData(){
             
-            std::cout << "Enter x coordinate: ";
-            std::cin >> x;
+            cout << "Enter x coordinate: ";
+            cin >> x;
             
-            std::cout << "Enter y coordinate: ";
-            std::cin >> y;
+            cout << "Enter y coordinate: ";
+            cin >> y;
 
         }
 
@@ -43,8 +43,8 @@ int main(){
     p2.getData();
 
     if(p1==p2){
-        std::cout << "Both Points are equal." << std::endl;
+        cout << "Both Points are equal." << endl;
     }else{
-        std::cout << "Both Points are not equal." << std::endl;
+        cout << "Both Points are not equal." << endl;
     }
 }

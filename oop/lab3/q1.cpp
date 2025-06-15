@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 class Distance{
 
     private:
@@ -10,11 +10,11 @@ class Distance{
     public:
         void getData(){
 
-            std::cout << "Enter feets: ";
-            std::cin >> feet;
+            cout << "Enter feets: ";
+            cin >> feet;
 
-            std::cout << "Enter inches: ";
-            std::cin >> inches;
+            cout << "Enter inches: ";
+            cin >> inches;
 
         }
 
@@ -40,8 +40,8 @@ class Distance{
 
         void showData(){
             
-            std::cout << "Total Feet: " << feet << std::endl;
-            std::cout << "Total Inches: " << inches << std::endl;
+            cout << "Total Feet: " << feet << endl;
+            cout << "Total Inches: " << inches << endl;
 
         }
 

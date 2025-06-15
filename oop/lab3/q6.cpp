@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 class Rectangle{
 
     private:
@@ -9,18 +9,18 @@ class Rectangle{
     public:
 
         Rectangle operator >>(Rectangle r1){
-            std::cout << "Enter length: ";
-            std::cin >> length; 
+            cout << "Enter length: ";
+            cin >> length; 
             
-            std::cout << "Enter breadth: ";
-            std::cin >> breadth; 
+            cout << "Enter breadth: ";
+            cin >> breadth; 
         }
 
         void showData(){
-        std::cout << "Length: " << length << std::endl;
-        std::cout << "Breadth: " << breadth << std::endl;
+        cout << "Length: " << length << endl;
+        cout << "Breadth: " << breadth << endl;
 
-        std::cout << "Area: " << length*breadth << std::endl;
+        cout << "Area: " << length*breadth << endl;
 
         } 
 

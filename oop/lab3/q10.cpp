@@ -1,22 +1,17 @@
 #include <iostream>
-
+using namespace std;
 class Money{
-
     private:
-        float rupees = 0.0;
-        float paisa = 0.0;
-
+        float rupees = 0.0,paisa = 0.0;
     public:
        Money operator +=(Money m1){
+           float rup,pai;
 
-           float rup;
-           float pai;
-
-           std::cout << "Enter rupees: ";
-           std::cin >> rup; 
+           cout << "Enter rupees: ";
+           cin >> rup; 
            
-           std::cout << "Enter paisa: ";
-           std::cin >> pai; 
+           cout << "Enter paisa: ";
+           cin >> pai; 
 
           this->rupees += rup;
           this->paisa += pai;
@@ -25,17 +20,13 @@ class Money{
 
               this->paisa -= 100;
               this->rupees += 1;
-
           }
-
        } 
 
        void showMoney(){
-
-           std::cout << "Money: \n";
-           std::cout << "Rupees: " << rupees << std::endl;
-           std::cout << "Paisa: " << paisa << std::endl;
-
+           cout << "Money: \n";
+           cout << "Rupees: " << rupees << endl;
+           cout << "Paisa: " << paisa << endl;
        }
 
 };
@@ -46,7 +37,6 @@ int main(){
 
     m1 += m1;
     m1.showMoney();
-    
     m1 += m1;
     m1.showMoney();
 }

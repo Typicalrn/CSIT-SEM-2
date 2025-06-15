@@ -1,20 +1,20 @@
 #include <iostream>
-
+using namespace std;
 class Book{
 
     private:
-        std::string title;
-        std::string author;
+        string title;
+        string author;
 
     public:
 
         void getData(){
             
-            std::cout << "Enter book name: ";
-            std::getline(std::cin >> std::ws, title);
+            cout << "Enter book name: ";
+            getline(cin >> ws, title);
 
-            std::cout << "Enter author name: ";
-            std::getline(std::cin >> std::ws, author);
+            cout << "Enter author name: ";
+            getline(cin >> ws, author);
 
         }
 
@@ -38,9 +38,9 @@ int main(){
     b2.getData();
 
     if(b1!=b2){
-        std::cout << "The books different." << std::endl;
+        cout << "The books different." << endl;
     }else{
-        std::cout << "The books are same." << std::endl;
+        cout << "The books are same." << endl;
     }
 
 }
