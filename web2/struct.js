@@ -5,12 +5,12 @@ let user={
     age: 12,
     address:"Kathmandu",
 };
-// console.log(user.email);
-// console.log(user.address);
-// console.log(Object.keys(user));
-// console.log(Object.values(user));
-// delete user.address;
-// console.log(user);
+console.log(user.email);
+console.log(user.address);
+console.log(Object.keys(user));
+console.log(Object.values(user));
+delete user.address;
+console.log(user);
 let {email,password}=user;
 console.log(email);//object destructuring
 console.log(password);

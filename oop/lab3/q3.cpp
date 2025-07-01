@@ -3,8 +3,7 @@ using namespace std;
 class Point{
 
     private:
-        int x;
-        int y;
+        int x,y;
     
     public:
         void getData(){
@@ -16,8 +15,6 @@ class Point{
             cin >> y;
 
         }
-
-
         int operator ==(Point p2){
 
             if(this->x == p2.x){
