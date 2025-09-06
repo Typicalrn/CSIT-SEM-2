@@ -8,7 +8,7 @@ class Parent{
     Parent(){
         cout<<"I am default parent constructor"<<endl;
     }
-    Parent(int x,int y):x{x},y{y}{
+    Parent(int a,int b):x{a},y{b}{
         cout<<"I am parameterized parent constructor"<<endl;
     }
     void getData(){
